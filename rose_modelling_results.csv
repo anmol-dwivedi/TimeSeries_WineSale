@@ -1,0 +1,22 @@
+,Model,Train RMSE,Train MAPE,Test RMSE,Test MAPE,Data Source
+0,RegressionModel_Model1,30.72,21.22,51.39,91.49,original
+1,Naive_Model2,45.06,36.38,79.67,144.91,original
+2,SimpleAveraging_Model3,36.03,25.39,53.41,94.77,original
+3,2-Point Trailing MA_Model4,19.47,12.47,11.53,13.57,original
+4,4-Point Trailing MA_Model4,25.97,18.03,14.44,19.46,original
+5,6-Point Trailing MA_Model4,28.46,20.41,14.55,20.82,original
+6,9-Point Trailing MA_Model4,30.23,22.06,14.72,20.99,original
+7,SimpleExpSmoothing_Model5,31.78,22.37,37.54,65.2,original
+8,SES_FixedAlpha=0.07_Model6,32.65,23.02,36.39,63.09,original
+9,DoubleExpSmoothing_Alpha=0.0_Beta=0.0_Model7,30.72,21.22,15.25,22.69,original
+10,DES_GridSearch_Alpha=0.1_Beta=0.1_Model8,32.03,22.78,37.01,63.89,original
+11,TES_Auto_AddTrend_AddSeasonality_Model9,19.48,13.27,14.23,19.16,original
+12,TES_Final_Alpha=0.3_Beta=0.3_Gamma=0.4_Model10,25.31,18.48,12.74,17.01,original
+13,"ARIMA_(2, 1, 3)_Model11",31.54,22.62,36.77,63.77,original data | 1st diff in Model
+14,"SARIMA_(0, 1, 2)_x_(2, 0, 2, 12)_Model12",32.23,18.55,26.88,46.48,original data | 1st diff Model
+15,"Manual_ARIMA_(2,1,1)_Model13",32.6,22.88,16.76,21.69,original data | 1st diff in Model
+16,"Manual_ARIMA_(1,1,2)_Model13",32.4,22.45,16.72,21.7,original data | 1st diff in Model
+17,"SARIMA_Manual_(3,1,2)(3,1,2,12)_Model14",42.46,24.38,16.76,25.08,original data | 1st diff model
+18,Prophet_Model15,,,17.3,24.42,original | reindexed
+19,XGBoost_Model16,4.97,3.78,27.65,46.09,original | lag features
+20,CNN_LSTM_Model17,24.36,18.81,22.15,38.12,scaled + inverse

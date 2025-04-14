@@ -19,4 +19,4 @@
 17,"SARIMA_Manual_(3,1,2)(3,1,2,12)_Model14",641.92,16.27,329.53,10.36,original data | 1st diff model
 18,Prophet_Model15,,,440.63,14.35,original | reindexed
 19,XGBoost_Model16,79.5,2.57,441.33,13.19,original | lag features
-20,CNN_LSTM_Model17,407.05,12.63,404.43,12.93,scaled + inverse
+20,CNN_LSTM_Model17,421.83,12.67,399.31,13.35,scaled + inverse
