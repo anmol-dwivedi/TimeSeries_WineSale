@@ -1,0 +1,66 @@
+.
+├── Data
+│   ├── Rose.csv
+│   └── Sparkling.csv
+├── Deployment
+│   └── main.py
+├── JointAnalysis.ipynb
+├── model_outputs
+│   ├── rose
+│   │   ├── arima_1_1_2.csv
+│   │   ├── arima_2_1_1.csv
+│   │   ├── arima_auto.csv
+│   │   ├── best_des.csv
+│   │   ├── best_ses.csv
+│   │   ├── double_exponential_smoothing.csv
+│   │   ├── moving_average_2.csv
+│   │   ├── moving_average_4.csv
+│   │   ├── moving_average_6.csv
+│   │   ├── moving_average_9.csv
+│   │   ├── naive model.csv
+│   │   ├── regression.csv
+│   │   ├── sarima_3_1_2x3_1_2_12.csv
+│   │   ├── sarima.csv
+│   │   ├── simple_average.csv
+│   │   ├── simple_exponential_smoothing.csv
+│   │   ├── tes_auto.csv
+│   │   └── tes_optimized.csv
+│   ├── sparkling
+│   │   ├── arima_1_1_2.csv
+│   │   ├── arima_2_1_1.csv
+│   │   ├── arima_auto.csv
+│   │   ├── best_des.csv
+│   │   ├── best_ses.csv
+│   │   ├── double_exponential_smoothing.csv
+│   │   ├── moving_average_2.csv
+│   │   ├── moving_average_4.csv
+│   │   ├── moving_average_6.csv
+│   │   ├── moving_average_9.csv
+│   │   ├── naive model.csv
+│   │   ├── regression.csv
+│   │   ├── sarima_3_1_2x3_1_2_12.csv
+│   │   ├── sarima.csv
+│   │   ├── simple_average.csv
+│   │   ├── simple_exponential_smoothing.csv
+│   │   ├── tes_auto.csv
+│   │   └── tes_optimized.csv
+│   ├── TimeSeriesModelling_Rose_ModelOutputData.ipynb
+│   └── TimeSeriesModelling_Sparkling_ModelOutputData.ipynb
+├── OldWork
+│   ├── 7. Anmol Dwivedi_TIME SERIES FORECASTING PYTHON NOTEBOOK_13th September.ipynb
+│   ├── Anmol Dwivedi_TimeSeriesForecasting_Business Report_Sparkling dataset_13th Sept.pdf
+│   ├── Business Report Sparkling dataset.pdf
+│   ├── Rose.csv
+│   └── Sparkling.csv
+├── project_structure.txt
+├── rose_modelling_results.csv
+├── rose_sarima_model.pkl
+├── sparkling_modelling_results.csv
+├── sparkling_sarima_model.pkl
+├── TimeSeriesModelling_Rose.ipynb
+├── TimeSeriesModelling_Sparkling.ipynb
+├── Untitled Diagram.drawio
+├── wine_modeling_results.xlsx
+└── WineTimeSeries_FinalRoadmap.xlsx
+
+7 directories, 57 files
