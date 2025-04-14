@@ -1,9 +1,7 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 import pandas as pd
 import joblib
 import plotly.graph_objects as go
-from PIL import Image
 
 st.set_page_config(layout="wide", page_title="Wine Sales Prediction App", page_icon="🍷")
 
@@ -33,8 +31,8 @@ forecast_steps = st.slider("Months", 1, 12, 6)
 
 # ---- Forecast Function ----
 def get_sarima_forecast_plot(wine_type='Sparkling', forecast_steps=12):
-    data_path = f"{wine_type}.csv"
-    model_path = f"{wine_type.lower()}_sarima_model.pkl"
+    data_path = f"Deployment/{wine_type}.csv"
+    model_path = f"Deployment/{wine_type.lower()}_sarima_model.pkl"
     df = pd.read_csv(data_path, parse_dates=True)
     df['YearMonth'] = pd.to_datetime(df['YearMonth'], format='%Y-%m')
     df = df.set_index('YearMonth').asfreq('MS')
@@ -79,16 +77,16 @@ col1, col2 = st.columns([2, 2], gap="large")
 with col1:
     st.subheader("🧪 Summary Diagnostic Plots from SARIMA")
     sarima_img = "Rose_SARIMA_Model_Diagnostics.png" if selected_wine == "Rose" else "Sparkling SARIMA Model Plot Diagnostics.png"
-    st.image(f"./{sarima_img}", use_container_width=True)
+    st.image(f"Deployment/{sarima_img}", use_container_width=True)
 
 with col2:
     st.subheader("📈 Residual Over Time Plot")
-    residual_img = f"ResidualsOverTime-{selected_wine}.png"
-    st.image(f"./{residual_img}", use_container_width=True)
+    residual_img = f"Deployment/ResidualsOverTime-{selected_wine}.png"
+    st.image(residual_img, use_container_width=True)
 
     st.subheader("🔁 Rolling Residual Diagnostics Plot")
-    rolling_img = f"RollingResidualDiagnostics-Rose.png" if selected_wine == "Rose" else "Rolling Residual Diagnostics-Sparkling.png"
-    st.image(f"./{rolling_img}", use_container_width=True)
+    rolling_img = f"Deployment/RollingResidualDiagnostics-Rose.png" if selected_wine == "Rose" else "Deployment/Rolling Residual Diagnostics-Sparkling.png"
+    st.image(rolling_img, use_container_width=True)
 
 # ---- Interpretation Section ----
 st.markdown("---")
@@ -172,7 +170,7 @@ def get_model_name_map():
     }
 
 model_name_map = get_model_name_map()
-csv_path = f"{selected_wine.lower()}_model_plot_data.csv"
+csv_path = f"Deployment/{selected_wine.lower()}_model_plot_data.csv"
 df = load_comparison_data(csv_path)
 available_models = [col for col in df.columns if col != "Actual"]
 
