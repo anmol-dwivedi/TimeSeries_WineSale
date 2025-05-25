@@ -10,17 +10,17 @@ An interactive time series forecasting application for **Sparkling** and **Rose*
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-- 🔮 Forecast wine sales using SARIMA, ARIMA, Prophet, LSTM, GRU, and more
-- 📊 Visualize residual diagnostics and stationarity transformations
-- 🔄 Compare actual vs predicted across multiple models
-- 📈 Customize forecast horizon (1–12 months)
-- 🌐 Deployed on Streamlit Cloud
+-  Forecast wine sales using SARIMA, ARIMA, Prophet, LSTM, GRU, and more
+-  Visualize residual diagnostics and stationarity transformations
+-  Compare actual vs predicted across multiple models
+-  Customize forecast horizon (1–12 months)
+-  Deployed on Streamlit Cloud
 
 ---
 
-## 🧠 Models Implemented
+##  Models Implemented
 
 **Classical Statistical Models**
 - Simple Average
@@ -42,7 +42,7 @@ An interactive time series forecasting application for **Sparkling** and **Rose*
 
 ---
 
-## 💼 Business Insights & Recommendations
+##  Business Insights & Recommendations
 
 ###  Rose Wine – Key Takeaways
 -  **Stable Forecasting Post-1982**: Residuals converge toward zero, indicating high reliability of forecasts in recent years.
@@ -59,7 +59,7 @@ An interactive time series forecasting application for **Sparkling** and **Rose*
 
 ---
 
-## 📊 Model Comparison Results
+##  Model Comparison Results
 
 ### **Sparkling Wine Forecasting Models**
 | Model                                          | Train RMSE   | Train MAPE   |   Test RMSE |   Test MAPE | Data Source                       |
@@ -114,7 +114,7 @@ An interactive time series forecasting application for **Sparkling** and **Rose*
 
 ---
 
-## 🗂️ Folder Structure
+##  Folder Structure
 
 ```
 TimeSeries_WineSale/
@@ -138,7 +138,7 @@ TimeSeries_WineSale/
 
 ---
 
-## ▶️ How to Run Locally
+##  How to Run Locally
 
 ```bash
 # 1. Clone the repository
@@ -157,7 +157,7 @@ streamlit run Deployment/app.py
 ---
 
 
-## 👨‍💻 Author
+##  Author
 
 **Anmol Dwivedi**  
 📍 Dallas, TX  
@@ -166,6 +166,6 @@ streamlit run Deployment/app.py
 
 ---
 
-## 🧾 License
+##  License
 
 This project is open-source and free for academic and demonstration purposes.
